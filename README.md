@@ -1,5 +1,5 @@
 
-## What you will learn
+## Features
 
 - Latest Next.js 13 features
 - Next.js App Router

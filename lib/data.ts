@@ -1,9 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/messenger.png";
-import rmtdevImg from "@/public/HealthApp_2.png";
-import wordanalyticsImg from "@/public/Home.png";
+import messenger from "@/public/messenger.png";
+import HealthApp from "@/public/HealthApp_2.png";
+import Home from "@/public/Home.png";
 
 export const links = [
   {
@@ -81,21 +81,24 @@ export const projectsData = [
     description:
       "A Full Stack Real-time messenger clone.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Pusher"],
-    imageUrl: corpcommentImg,
+    imageUrl: messenger,
+    href: "https://github.com/pandaofhead/messenger-clone",
   },
   {
     title: "Health App",
     description:
       "A Mobile Step Counter App integrated HealthKit APIs.",
     tags: ["React Native", "Java", "Apple Health API", "Google Fit API", "Firebase"],
-    imageUrl: rmtdevImg,
+    imageUrl: HealthApp,
+    href: "https://github.com/pandaofhead/abda_quiz",
   },
   {
     title: "American Band Dad",
     description:
       "A public website that aims to deliver music lessons for those dads who need it.",
     tags: ["React", "PostgreSQL", "AWS RDS"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: Home,
+    href: "https://github.com/pandaofhead/Health-APP",
   },
 ] as const;
 

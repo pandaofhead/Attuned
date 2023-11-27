@@ -1,10 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import corpcommentImg from "@/public/messenger.png";
+import rmtdevImg from "@/public/HealthApp_2.png";
+import wordanalyticsImg from "@/public/Home.png";
 
 export const links = [
   {
@@ -35,56 +34,75 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Technion - Israel Institute of Technology",
+    location: "Shantou, China",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Bachelor of Science in Chemical Engineering with GPA 3.8/4.0",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Aug 2019 - Aug 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Frontend Development Intern",
+    location: "Hubu Techology, Shanghai",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Spearheaded the design and implementation of an AI photo-generating and sharing website.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "May 2022 - Aug 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Cornell Tech",
+    location: "New York, NY",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Jacobs Technion-Cornell Dual Master of Science Degrees – Information Technology",
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2023 - Present",
+  },
+  {
+    title: "Full-Stack Development Intern",
+    location: "Scholarship Auditions, Remote",
+    description:
+      "Led the development of the AmericanBandDad website from scratch at a startup.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sep 2023 - Nov 2023",
+  },
+  {
+    title: "Software Development Intern",
+    location: "Weill Cornell Medicine, New York",
+    description:
+      "Participate in the development of IOS application “Attuned”, which provides free lessons for LGBTQ+ users to transform their voices as desired.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov 2023 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Messenger",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "A Full Stack Real-time messenger clone.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Pusher"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Health App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "A Mobile Step Counter App integrated HealthKit APIs.",
+    tags: ["React Native", "Java", "Apple Health API", "Google Fit API", "Firebase"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "American Band Dad",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A public website that aims to deliver music lessons for those dads who need it.",
+    tags: ["React", "PostgreSQL", "AWS RDS"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
 export const skillsData = [
+  "Java",
+  "Python",
+  "C++",
   "HTML",
   "CSS",
   "JavaScript",
@@ -94,14 +112,11 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
+  
   "Django",
-  "Framer Motion",
+  "Swift",
 ] as const;

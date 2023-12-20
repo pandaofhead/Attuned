@@ -63,15 +63,15 @@ export const experiencesData = [
     description:
       "Led the development of the AmericanBandDad website from scratch at a startup.",
     icon: React.createElement(CgWorkAlt),
-    date: "Sep 2023 - Nov 2023",
+    date: "Sep 2023 - Dec 2023",
   },
   {
-    title: "Software Development Intern",
-    location: "Weill Cornell Medicine, New York",
+    title: "Software Developer",
+    location: "Weill Cornell Medicine, New York City",
     description:
       "Participate in the development of IOS application “Attuned”, which provides free lessons for LGBTQ+ users to transform their voices as desired.",
     icon: React.createElement(CgWorkAlt),
-    date: "Nov 2023 - Present",
+    date: "Dec 2023 - Present",
   },
 ] as const;
 

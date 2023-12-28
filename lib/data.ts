@@ -82,7 +82,7 @@ export const projectsData = [
       "A Full Stack Real-time messenger clone.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Pusher"],
     imageUrl: messenger,
-    href: "https://github.com/pandaofhead/messenger-clone",
+    href: "https://messenger-clone-hongjin.vercel.app/",
   },
   {
     title: "Health App",

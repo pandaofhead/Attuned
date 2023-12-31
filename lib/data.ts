@@ -4,6 +4,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import messenger from "@/public/messenger.png";
 import HealthApp from "@/public/HealthApp_2.png";
 import Home from "@/public/Home.png";
+import Mainpage from "@/public/Mainpage.png";
 
 export const links = [
   {
@@ -100,6 +101,14 @@ export const projectsData = [
     imageUrl: Home,
     href: "https://github.com/pandaofhead/Health-APP",
   },
+  {
+    title: "Hoscompany",
+    description:
+      "A Hospital Service Business Wesbite For Olders",
+    tags: ["HTML/CSS", "JavaScript", "Bootstrap"],
+    imageUrl: Mainpage,
+    href: "https://github.com/pandaofhead/Hoscompany",
+  },
 ] as const;
 
 export const skillsData = [
@@ -114,12 +123,10 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
+  "Tailwind CSS",
   "MongoDB",
   "Redux",
   "Express",
   "PostgreSQL",
-  
-  "Django",
   "Swift",
 ] as const;

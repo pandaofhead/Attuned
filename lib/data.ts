@@ -5,7 +5,7 @@ import messenger from "@/public/messenger.png";
 import HealthApp from "@/public/HealthApp_2.png";
 import Home from "@/public/Home.png";
 import Mainpage from "@/public/Mainpage.png";
-import Chatbot from "@/public/Chatbot.png";
+import Chatbot from "@/public/chatbot.png";
 
 export const links = [
   {

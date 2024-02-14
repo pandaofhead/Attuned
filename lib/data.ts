@@ -5,6 +5,7 @@ import messenger from "@/public/messenger.png";
 import HealthApp from "@/public/HealthApp_2.png";
 import Home from "@/public/Home.png";
 import Mainpage from "@/public/Mainpage.png";
+import Chatbot from "@/public/Chatbot.png";
 
 export const links = [
   {
@@ -78,6 +79,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "AI Chatbot",
+    description:
+      "a ChatGPT-powered Q&A platform to address questions with Knowledge Planet, public WeChat.",
+    tags: ["Java", "SpringBoot", "ChatGPT", "Docker", "Web Crawler", "TensorFlow"],
+    imageUrl: Chatbot,
+    href: "https://github.com/pandaofhead/chatbot",
+  },
+  {
     title: "Messenger",
     description:
       "A Full Stack Real-time messenger clone.",
@@ -113,6 +122,7 @@ export const projectsData = [
 
 export const skillsData = [
   "Java",
+  "Golang",
   "Python",
   "C++",
   "HTML",

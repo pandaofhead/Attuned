@@ -30,7 +30,7 @@ export default function About() {
         <span className="font-medium text-xl text-blue-600">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also studying <span className="text-blue-600"> Docker and Kubernetes</span>. I am always looking to
+        . I am also studying <span className="text-blue-600"> Golang and Docker</span>. I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="text-xl font-medium text-blue-600">2024 summer internship</span> as a software
         development engineer.

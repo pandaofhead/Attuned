@@ -6,6 +6,7 @@ import HealthApp from "@/public/HealthApp_2.png";
 import Home from "@/public/Home.png";
 import Mainpage from "@/public/Mainpage.png";
 import Chatbot from "@/public/chatbot.png";
+import GeeCache from "@/public/GeeCache.jpg";
 
 export const links = [
   {
@@ -78,6 +79,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "GeeCache",
+    description:
+      "A standalone and HTTP-based distributed caching system, utilizing Go for efficient cache management and network communication.",
+    tags: ["Golang", "Distributed Caching", "HTTP", "LRU Caching", "Protocol Buffers"],
+    imageUrl: GeeCache,
+    href: "https://github.com/pandaofhead/GeeCache",
+  },
   {
     title: "AI Chatbot",
     description:

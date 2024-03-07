@@ -69,7 +69,7 @@ export const experiencesData = [
     date: "Sep 2023 - Dec 2023",
   },
   {
-    title: "Software Developer",
+    title: "Software Development Researcher",
     location: "Weill Cornell Medicine, New York City",
     description:
       "Participate in the development of IOS application “Attuned”, which provides free lessons for LGBTQ+ users to transform their voices as desired.",
@@ -80,18 +80,18 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "GeeCache",
+    title: "GoLightCache",
     description:
       "A standalone and HTTP-based distributed caching system, utilizing Go for efficient cache management and network communication.",
-    tags: ["Golang", "Distributed Caching", "HTTP", "LRU Caching", "Protocol Buffers"],
+    tags: ["Golang", "Distributed Caching", "gRPC", "LRU/LFU", "Protocol Buffers", "etcd"],
     imageUrl: GeeCache,
     href: "https://github.com/pandaofhead/GeeCache",
   },
   {
-    title: "AI Chatbot",
+    title: "AccountApp",
     description:
-      "a ChatGPT-powered Q&A platform to address questions with Knowledge Planet, public WeChat.",
-    tags: ["Java", "SpringBoot", "ChatGPT", "Docker", "Web Crawler", "TensorFlow"],
+      "A Golang full-stack demo app for user authentication and file management. ",
+    tags: ["Golang", "PostgreSQL", "JWT", "Docker", "Redis", "Testify", "Gin", "Vue.js"],
     imageUrl: Chatbot,
     href: "https://github.com/pandaofhead/chatbot",
   },
@@ -104,14 +104,6 @@ export const projectsData = [
     href: "https://messenger-clone-hongjin.vercel.app/",
   },
   {
-    title: "Health App",
-    description:
-      "A Mobile Step Counter App integrated HealthKit APIs.",
-    tags: ["React Native", "Java", "Apple Health API", "Google Fit API", "Firebase"],
-    imageUrl: HealthApp,
-    href: "https://github.com/pandaofhead/abda_quiz",
-  },
-  {
     title: "American Band Dad",
     description:
       "A public website that aims to deliver music lessons for those dads who need it.",
@@ -119,33 +111,23 @@ export const projectsData = [
     imageUrl: Home,
     href: "https://github.com/pandaofhead/Health-APP",
   },
-  {
-    title: "Hoscompany",
-    description:
-      "A Hospital Service Business Wesbite For Olders",
-    tags: ["HTML/CSS", "JavaScript", "Bootstrap"],
-    imageUrl: Mainpage,
-    href: "https://github.com/pandaofhead/Hoscompany",
-  },
 ] as const;
 
 export const skillsData = [
-  "Java",
   "Golang",
   "Python",
-  "C++",
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
+  "Vue.js",
   "Next.js",
   "Node.js",
-  "Git",
+  "Gin",
   "Tailwind CSS",
   "MongoDB",
-  "Redux",
-  "Express",
+  "MySQL",
+  "Docker",
+  "Redis",
   "PostgreSQL",
-  "Swift",
 ] as const;

@@ -7,6 +7,7 @@ import Home from "@/public/Home.png";
 import Mainpage from "@/public/Mainpage.png";
 import Chatbot from "@/public/chatbot.png";
 import GeeCache from "@/public/GeeCache.jpg";
+import account from "@/public/account.png";
 
 export const links = [
   {
@@ -83,17 +84,17 @@ export const projectsData = [
     title: "GoLightCache",
     description:
       "A standalone and HTTP-based distributed caching system, utilizing Go for efficient cache management and network communication.",
-    tags: ["Golang", "Distributed Caching", "gRPC", "LRU/LFU", "Protocol Buffers", "etcd"],
+    tags: ["Go", "gRPC", "LRU/LFU", "Protocol Buffers", "etcd"],
     imageUrl: GeeCache,
-    href: "https://github.com/pandaofhead/GeeCache",
+    href: "https://github.com/pandaofhead/GoLightCache",
   },
   {
     title: "AccountApp",
     description:
       "A Golang full-stack demo app for user authentication and file management. ",
-    tags: ["Golang", "PostgreSQL", "JWT", "Docker", "Redis", "Testify", "Gin", "Vue.js"],
-    imageUrl: Chatbot,
-    href: "https://github.com/pandaofhead/chatbot",
+    tags: ["Go", "PostgreSQL", "JWT", "Docker", "Redis", "Testify", "Gin", "Vue.js"],
+    imageUrl: account,
+    href: "https://github.com/pandaofhead/AccountApp",
   },
   {
     title: "Messenger",
@@ -114,7 +115,7 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "Golang",
+  "Go",
   "Python",
   "HTML",
   "CSS",

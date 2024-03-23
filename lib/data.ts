@@ -2,12 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import messenger from "@/public/messenger.png";
-import HealthApp from "@/public/HealthApp_2.png";
 import Home from "@/public/Home.png";
-import Mainpage from "@/public/Mainpage.png";
-import Chatbot from "@/public/chatbot.png";
 import GeeCache from "@/public/GeeCache.jpg";
 import account from "@/public/account.png";
+import GeeDB from "@/public/golightdb.png";
 
 export const links = [
   {
@@ -84,9 +82,17 @@ export const projectsData = [
     title: "GoLightCache",
     description:
       "A standalone and HTTP-based distributed caching system, utilizing Go for efficient cache management and network communication.",
-    tags: ["Go", "gRPC", "LRU/LFU", "Protocol Buffers", "etcd"],
+    tags: ["Go", "gRPC", "Consistence Hashing","etcd", "Raft"],
     imageUrl: GeeCache,
     href: "https://github.com/pandaofhead/GoLightCache",
+  },
+  {
+    title: "GoLightDB",
+    description:
+      "A lightweight KV storage based on Bitcask model, implemented in Go.",
+    tags: ["Go", "Bitcask", "LSM Tree", "KV Database", "Redis"],
+    imageUrl: GeeDB,
+    href: "https://github.com/pandaofhead/GoLightDB",
   },
   {
     title: "AccountApp",

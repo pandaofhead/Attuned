@@ -17,16 +17,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Features",
+    hash: "#features",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
+    name: "Team",
+    hash: "#team",
   },
   {
     name: "Contact",
@@ -36,42 +32,42 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Technion - Israel Institute of Technology",
-    location: "Shantou, China",
+    title: "Anaïs Rameau (she/her/hers)",
+    location: "Weill Cornell Medicine",
     description:
-      "Bachelor of Science in Chemical Engineering with GPA 3.8/4.0",
+      "An academic laryngologist with a background in the humanities and social sciences.",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2019 - Aug 2023",
   },
   {
-    title: "Frontend Development Intern",
-    location: "Hubu Techology, Shanghai",
+    title: "Mary Pitti",
+    location: "Ithaca College",
     description:
-      "Spearheaded the design and implementation of an AI photo-generating and sharing website.",
+      "M.S., CCC-SLP is the Clinic Director and a clinical faculty member in the Speech-Language Pathology and Audiology department at Ithaca College. ",
     icon: React.createElement(CgWorkAlt),
     date: "May 2022 - Aug 2022",
   },
   {
-    title: "Cornell Tech",
-    location: "New York, NY",
+    title: "Keith Chadwick, MD, MS",
+    location: "Cornell University",
     description:
-      "Jacobs Technion-Cornell Dual Master of Science Degrees – Information Technology",
+      "Dr. Chadwickwas awarded a Cornell University Dean's Diversity and Healthcare Disparity Research Award to improve access to voice modification for transgender and non-binary people through the development of Attuned Voice.",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2023 - Present",
   },
   {
-    title: "Full-Stack Development Intern",
-    location: "Scholarship Auditions, Remote",
+    title: "KD York",
+    location: "Portland OR",
     description:
-      "Led the development of the AmericanBandDad website from scratch at a startup.",
+      "a trans artist based in Portland OR. Excited to have such an amazing resource free and accessible to the community",
     icon: React.createElement(CgWorkAlt),
     date: "Sep 2023 - Dec 2023",
   },
   {
-    title: "Software Development Researcher",
-    location: "Weill Cornell Medicine, New York City",
+    title: "Tech team",
+    location: "Cornell Tech",
     description:
-      "Participate in the development of IOS application “Attuned”, which provides free lessons for LGBTQ+ users to transform their voices as desired.",
+      "Three grad students from Cornell Tech: Hongjin Quan, Yucan,  who are passionate about building a better world for the LGBTQ+ community.",
     icon: React.createElement(CgWorkAlt),
     date: "Dec 2023 - Present",
   },
@@ -82,7 +78,7 @@ export const projectsData = [
     title: "GoLightCache",
     description:
       "A standalone and HTTP-based distributed caching system, utilizing Go for efficient cache management and network communication.",
-    tags: ["Go", "gRPC", "Consistence Hashing","etcd", "Raft"],
+    tags: ["Go", "gRPC", "Consistence Hashing", "etcd", "Raft"],
     imageUrl: GeeCache,
     href: "https://github.com/pandaofhead/GoLightCache",
   },
@@ -98,14 +94,22 @@ export const projectsData = [
     title: "AccountApp",
     description:
       "A Golang full-stack demo app for user authentication and file management. ",
-    tags: ["Go", "PostgreSQL", "JWT", "Docker", "Redis", "Testify", "Gin", "Vue.js"],
+    tags: [
+      "Go",
+      "PostgreSQL",
+      "JWT",
+      "Docker",
+      "Redis",
+      "Testify",
+      "Gin",
+      "Vue.js",
+    ],
     imageUrl: account,
     href: "https://github.com/pandaofhead/AccountApp",
   },
   {
     title: "Messenger",
-    description:
-      "A Full Stack Real-time messenger clone.",
+    description: "A Full Stack Real-time messenger clone.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Pusher"],
     imageUrl: messenger,
     href: "https://messenger-clone-hongjin.vercel.app/",

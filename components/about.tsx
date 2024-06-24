@@ -17,7 +17,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About this app</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium text-blue-600">Chemical Engineering</span>, I decided to combine my

@@ -4,9 +4,10 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaAppStore } from "react-icons/fa";
+import { FaGooglePlay } from "react-icons/fa";
+import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -31,13 +32,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/photo.jpg"
+              src="/app-logo.png"
               alt="Photo"
-              width="192"
-              height="192"
-              quality="95"
+              width="250"
+              height="250"
+              quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-30 w-30 rounded-full object-cover bg-white dark:bg-black"
             />
           </motion.div>
 
@@ -52,7 +53,6 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            🐾
           </motion.span>
         </div>
       </div>
@@ -62,10 +62,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Hongjin Quan</span><br></br>
-        <span className="font-bold">Master Student at Cornell Tech</span> major in{" "}
-        <span className="italic">Information Technology&Science</span> <br></br>
-        I am now looking for a <span className="underline">Summer Internship</span>
+        <div className="font-bold">Attuned</div>{" "}
+        <div className="font-bold">
+          A mobile application designed for LGBTQ+ community
+        </div>
+        <div className="italic">Find your true voice here</div>
       </motion.h1>
 
       <motion.div
@@ -78,14 +79,14 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-blue-500 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-600 active:scale-105 transition"
+          className="group bg-sky-500 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-600 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact Me{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contact Us{" "}
+          <BsArrowRight className="opacity-100 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
@@ -93,7 +94,8 @@ export default function Intro() {
           href="/Hongjin_SDE.pdf"
           download
         >
-          Download CV{" "}
+          <FaAppStore />
+          App Store{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
@@ -101,24 +103,9 @@ export default function Intro() {
           href="/hongjin_cn.pdf"
           download
         >
-          下载中文版简历{" "}
+          <FaGooglePlay />
+          Google Play{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-
-        <a
-          className="bg-blue-400 p-4 text-white hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/hongjin-quan-564737271/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-blue-400 p-4 text-white flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/pandaofhead"
-          target="_blank"
-        >
-          <FaGithubSquare />
         </a>
       </motion.div>
     </section>

@@ -7,38 +7,45 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
   const { ref } = useSectionInView("About");
+  const container = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.175,
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      className="max-w-[45rem] text-center leading-8 scroll-mt-28"
+      initial="hidden"
+      animate="visible"
+      variants={container}
       id="about"
     >
-      <SectionHeading>About this app</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium text-blue-600">Chemical Engineering</span>, I decided to combine my
-        background with programming in <span className="text-blue-600 font-medium">Software Development</span> . I self-learned{" "}
-        <span className="font-medium text-blue-600">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium text-xl text-blue-600">
-          Go, React, Node.js, and MongoDB
-        </span>
-        . I am also studying <span className="text-blue-600"> Go</span>. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="text-xl font-medium text-blue-600">2024 summer internship</span> as a software
-        development engineer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not studying</span>, I enjoy hiking, and playing with my <span className="text-amber-500 text-xl">cats</span>, all of them are rescued stray cats during my undergrad.
-      </p>
+      <SectionHeading>About This App</SectionHeading>
+      <motion.p className="mb-5 text-lg hover:text-sky-400 cursor-pointer" variants={item}>
+        Attuned is a voice training application that severs the need for trans
+        and non-binary individuals to have to rely on expensive voice therapy
+        sessions. The app is designed to be a free and accessible resource for
+        the community.
+      </motion.p>
+      <motion.p className=" text-lg hover:text-green-500 cursor-pointer" variants={item}>
+        The app was developed by a team of professionals from Weill Cornell
+        Medicine and artists with a shared goal of improving access to voice
+        modification.
+      </motion.p>
     </motion.section>
   );
 }

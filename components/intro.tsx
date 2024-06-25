@@ -10,6 +10,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { ReactTyped } from "react-typed";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -19,64 +20,46 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] mx-auto sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="flex items-center justify-center">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
-          >
-            <Image
-              src="/app-logo.png"
-              alt="Photo"
-              width="250"
-              height="250"
-              quality="100"
-              priority={true}
-              className="h-30 w-30 rounded-full object-cover bg-white dark:bg-black"
-            />
-          </motion.div>
-
-          <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-          </motion.span>
+      <div className="flex flex-col sm:flex-row items-start justify-between">
+        <div className="sm:w-1/2 text-left">
+          <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+            <div className="font-bold mb-4 ">Attuned</div>
+            <div className="font-bold text-2xl">
+              <ReactTyped
+                strings={["A mobile application designed for LGBTQ+ community"]}
+                typeSpeed={50}
+                backSpeed={50}
+                startDelay={500}
+                showCursor={true}
+                loop
+              />
+            </div>
+            <div className="italic mt-4">
+              <ReactTyped
+                strings={["Find your true voice here"]}
+                typeSpeed={40}
+                startDelay={1000}
+                showCursor={false}
+              />
+            </div>
+          </h1>
+        </div>
+        <div className="sm:w-1/2 flex justify-center sm:justify-end mt-10 sm:mt-0">
+          <Image
+            src="/app-logo.png"
+            alt="Photo"
+            width="200"
+            height="200"
+            quality="100"
+            priority={true}
+            className="h-30 w-30 rounded-full object-cover bg-white dark:bg-black"
+          />
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <div className="font-bold">Attuned</div>{" "}
-        <div className="font-bold">
-          A mobile application designed for LGBTQ+ community
-        </div>
-        <div className="italic">Find your true voice here</div>
-      </motion.h1>
-
-      <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
-      >
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium mt-10">
         <Link
           href="#contact"
           className="group bg-sky-500 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-600 active:scale-105 transition"
@@ -89,25 +72,25 @@ export default function Intro() {
           <BsArrowRight className="opacity-100 group-hover:translate-x-1 transition" />
         </Link>
 
-        <a
+        <Link
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Hongjin_SDE.pdf"
+          href=""
           download
         >
           <FaAppStore />
           App Store{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-        <a
+        </Link>
+        <Link
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/hongjin_cn.pdf"
+          href=""
           download
         >
           <FaGooglePlay />
           Google Play{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-      </motion.div>
+        </Link>
+      </div>
     </section>
   );
 }

@@ -31,14 +31,6 @@ export default function Contact() {
     >
       <SectionHeading>Contact Us</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:hq48@cornell.edu">
-          hq48@cornell.edu
-        </a>{" "}
-        or through this form.
-      </p>
-
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {

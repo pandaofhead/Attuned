@@ -6,6 +6,7 @@ import lessons from "@/public/lessons.jpg";
 import voicetracker from "@/public/voicetracker.jpg";
 import recordings from "@/public/recordings.jpg";
 import settings from "@/public/settings.jpg";
+import homework from "@/public/homework.jpg";
 import { data } from "autoprefixer";
 
 export const links = [
@@ -83,14 +84,21 @@ export const projectsData = [
   {
     title: "Lessons",
     description:
-      "Online learning platform for LGBTQ+ voice training, unlock the next lesson only after the previous one is completed.",
+      "Online learning lessons for LGBTQ+ voice training, customize your goal and gain different learning paths.",
     tags: ["Firebase", "Real-time Database", "Authentication"],
     imageUrl: lessons,
   },
   {
+    title: "Homework",
+    description:
+      "Professionally designed homework assignments to help users practice their voice training, unlock the next assignment only after the previous one is completed.",
+    tags: ["Async Storage", "Real-time Database"],
+    imageUrl: homework,
+  },
+  {
     title: "VoiceTracker",
     description:
-      "A voice detection and tracking system for real-time voice modification.",
+      "A voice detection and tracking system for real-time voice modification, providing instant feedback to users.",
     tags: ["Python", "Flask", "WebRTC", "OpenCV", "TensorFlow"],
     imageUrl: voicetracker,
   },

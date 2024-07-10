@@ -7,7 +7,6 @@ import voicetracker from "@/public/voicetracker.jpg";
 import recordings from "@/public/recordings.jpg";
 import settings from "@/public/settings.jpg";
 import homework from "@/public/homework.jpg";
-import { data } from "autoprefixer";
 
 export const links = [
   {
@@ -64,16 +63,16 @@ export const experiencesData = [
     title: "KD York",
     location: "Portland OR",
     description:
-      "a trans artist based in Portland OR. Excited to have such an amazing resource free and accessible to the community",
+      "A trans artist based in Portland OR. Excited to have such an amazing resource free and accessible to the community",
     icon: React.createElement(CgGirl),
     href: "",
     date:"",
   },
   {
-    title: "Tech team",
+    title: "development team",
     location: "Cornell Tech",
     description:
-      "Three grad students from Cornell Tech: Hongjin Quan, Yucan,  who are passionate about building a better world for the LGBTQ+ community.",
+      "A team of Cornell Tech students who are passionate about building a better world for the LGBTQ+ community.",
     icon: React.createElement(RiTeamFill),
     href: "",
     date:"",

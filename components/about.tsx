@@ -2,50 +2,48 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
-  const container = {
-    hidden: { opacity: 0, y: 100 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.175,
-        when: "beforeChildren",
-        staggerChildren: 0.3,
-      },
-    },
-  };
+  const { ref } = useSectionInView("About", 0.5);
 
-  const item = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0 },
-  };
+  const cardList = [
+    {
+      title: "Find your true voice",
+      description: "Discover your true self with our expert coaches.",
+    },
+    {
+      title: "Join a community of experts",
+      description:
+        "Connect with a community of experts and like-minded individuals who are here to support you.",
+    },
+    {
+      title: "Train on your own schedule",
+      description:
+        "Our app is available on both iOS and Android, so you can train on your own schedule.",
+    },
+  ];
 
   return (
-    <motion.section
+    <section
       ref={ref}
-      className="max-w-[45rem] text-center leading-8 scroll-mt-28"
-      initial="hidden"
-      animate="visible"
-      variants={container}
       id="about"
+      className="flex flex-col justify-center items-center py-12 bg-secondary"
     >
-      <SectionHeading>About This App</SectionHeading>
-      <motion.p className="mb-5 text-lg hover:text-sky-400 cursor-pointer" variants={item}>
-        Attuned is a voice training application that severs the need for trans
-        and non-binary individuals to have to rely on expensive voice therapy
-        sessions. The app is designed to be a free and accessible resource for
-        the community.
-      </motion.p>
-      <motion.p className=" text-lg hover:text-green-500 cursor-pointer" variants={item}>
-        The app was developed by a team of professionals from Weill Cornell
-        Medicine and artists with a shared goal of improving access to voice
-        modification.
-      </motion.p>
-    </motion.section>
+      <div className="max-w-6xl mx-auto text-center">
+        <SectionHeading>about attunedvoice</SectionHeading>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
+          {cardList.map((card, index) => (
+            <div
+              key={index}
+              className="scale-90 p-6 bg-gray-100 rounded-lg shadow-md hover:scale-105 sm:scale-100 dark:bg-white/10 dark:hover:bg-white/20"
+            >
+              <h3 className="text-xl font-semibold mb-4">{card.title}</h3>
+              <p>{card.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

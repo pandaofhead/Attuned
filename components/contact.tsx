@@ -30,9 +30,13 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact Us</SectionHeading>
-
+      <p>
+        or you can directly send and email to{" "}
+        <a href="mailto:attunedvoice@gmail.com"
+        className="text-gray-500">attunedvoice@gmail.com</a>
+      </p>
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-8 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 

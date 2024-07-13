@@ -7,7 +7,6 @@ import { FaAppStore } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { LuGithub } from "react-icons/lu";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { ReactTyped } from "react-typed";
@@ -81,12 +80,6 @@ export default function Intro() {
           <FaGooglePlay />
           Google Play{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </Link>
-        <Link
-          className="group bg-white p-5 flex items-center rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href=""
-        >
-          <LuGithub />
         </Link>
       </div>
     </section>

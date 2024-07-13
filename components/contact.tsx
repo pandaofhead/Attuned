@@ -31,7 +31,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact Us</SectionHeading>
       <p>
-        or you can directly send and email to{" "}
+        or you can directly send an email to{" "}
         <a href="mailto:attunedvoice@gmail.com"
         className="text-gray-500">attunedvoice@gmail.com</a>
       </p>

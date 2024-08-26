@@ -12,8 +12,8 @@ A mobile application that helps LGBTQ+ users change their voice to match gender 
 
 | Architecture     | Tech Stack                                         |
 | ---------------- | -------------------------------------------------- |
-| Frontend         | React Native                                       |
-| Backend          | Flask, Python                                      |
+| Frontend         | React Native(Expo)                                 |
+| Backend/ML       | Python, FastAPI                                    |
 | Data Layer       | Firebase Firestore, Firebase Storage, AsyncStorage |
 | Authentication   | Clerk Auth                                         |
 | State Management | Context API                                        |
@@ -21,7 +21,7 @@ A mobile application that helps LGBTQ+ users change their voice to match gender 
 
 ### App Download
 
-Application is available for download on both IOS and Android platforms.
+Application will be available on both IOS and Android platforms after the beta testing phase.
 
-- [IOS](https://apps.apple.com/us/app/attuned/id1580190131)
-- [Android](https://play.google.com/store/apps/details?id=com.attuned)
+- [IOS]()
+- [Android]()

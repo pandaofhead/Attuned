@@ -98,14 +98,14 @@ export const projectsData = [
     title: "VoiceTracker",
     description:
       "A voice detection and tracking system for real-time voice modification, providing instant feedback to users.",
-    tags: ["Python", "Flask", "WebRTC", "OpenCV", "TensorFlow"],
+    tags: ["Python", "FastAPI", "TensorFlow", "LSTM", "CONV1D"],
     imageUrl: voicetracker,
   },
   {
     title: "Recordings",
     description:
       "Save your voice recordings and track your progress over time.",
-    tags: ["Async Storage", "React Native", "Expo"],
+    tags: ["Async Storage", "Expo"],
     imageUrl: recordings,
   },
   {
